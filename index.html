@@ -23,28 +23,35 @@
         </nav>
 
         <div class="background">
-            <div class="container">
-                <section>
-                    <button>Pay</button>
-                    <button>Transfer</button>
-                </section>
+            <section>
+                <button id="pay-btn">Pay</button>
+                <button id="transfer-btn">Transfer</button>
+            </section>
 
-                <section>
+            <section class="main-section">
+                <div class="account">
                     <h1>Accounts</h1>
-                    <div class="big-button">
-                        <p>Main Account</p>
-                        <p>$ 6,700.56</p>
+                    <div class="account-btn" id="id-one-btn">
+                        <p id="id-one-title"></p>
+                        <p id="id-one-balance"></p>
                     </div>
-                    <div class="big-button">
-                        <p>Expenses</p>
-                        <p>$ 5,134.63</p>
+                    <div class="account-btn" id="id-two-btn">
+                        <p id="id-two-title"></p>
+                        <p id="id-two-balance"></p>
                     </div>
-                    <div class="big-button">
-                        <p>Savings</p>
-                        <p>$ 36,500.12</p>
+                    <div class="account-btn" id="id-three-btn">
+                        <p id="id-three-title"></p>
+                        <p id="id-three-balance"></p>
                     </div>
-                </section>
-            </div>
+                </div>
+                    
+                <div class="spending">
+                    <h1>Spending</h1>
+                    <div id="spending-container">
+                        <!-- js goes here -->
+                    </div>
+                </div>
+            </section>
         </div>
         <script src="index.js"></script>
     </body>

@@ -34,7 +34,9 @@ nav {
     margin-top: 30px;
 }
 
-nav .container {
+.container {
+    width: 730px;
+    margin: 0 auto;
     display: flex;
     height: 66px;
     align-items: center;
@@ -44,9 +46,6 @@ nav .container {
 nav a {
     text-decoration: none;
     color: #000000;
-    padding: 0;
-    
-    display: block;
 }
 
 nav a:hover {
@@ -61,13 +60,23 @@ nav a:active {
 
 /* main section */
 
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
 .background {
     background-color: #FDF7F4;
     padding-bottom: 100px;
 }
 
+.account, .spending {
+    margin: 0 30px;
+    width: 530px;
+}
+
 button {
-    margin: 33px 7px 42px;
+    margin: 33px 20px 42px;
     font-size: 30px;
     font-weight: 700;
     width: 275px;
@@ -80,7 +89,11 @@ button {
 button:hover, button:active {
     background-color: #FFA724;
     cursor: pointer;
+    transform:scale(1.1);
+    letter-spacing: 4px;
 }
+
+/* account and spending section */
 
 h1 {
     font-size: 40px;
@@ -88,27 +101,51 @@ h1 {
     margin: 0 0 25px;
 }
 
-.big-button {
+.account-btn, .spending-field {
     font-weight: 700;
     width: 100%;
-    background-color: #FFFFFF;
-    border: #FFA724 5px solid;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    margin-bottom: 11px;
 }
 
-p {
-    padding: 42px;
-    margin: 0;
+.account-btn {
+    background-color: #FFFFFF;
+    border: #FFA724 5px solid;
+    margin-bottom: 15px;
 }
 
-/* utility class */
+.account-btn:hover {
+    cursor: pointer;
+}
 
-.container {
-    width: 730px;
-    margin: 0 auto;
-    /* background-color: red; */
+.account-btn p {
+    margin: 42px 30px;
+}
+
+.spending-field {
+    background-color: #FFD18C;
+    margin-bottom: 13px;
+}
+
+.spending-field p {
+    margin: 15px 20px;
+}
+
+/* spending utility class */
+
+.width-85 {
+    width: 85%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.width-55 {
+    width: 55%;
+}
+
+.width-44 {
+    width: 44%;
 }
